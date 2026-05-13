@@ -15,4 +15,16 @@ LeetCode-Solutions
 | [1683-invalid-tweets](https://github.com/williamllin/LeetCode-Solutions/tree/master/1683-invalid-tweets) |
 | [1757-recyclable-and-low-fat-products](https://github.com/williamllin/LeetCode-Solutions/tree/master/1757-recyclable-and-low-fat-products) |
 | [1873-calculate-special-bonus](https://github.com/williamllin/LeetCode-Solutions/tree/master/1873-calculate-special-bonus) |
+## Array
+|  |
+| ------- |
+| [0217-contains-duplicate](https://github.com/williamllin/LeetCode-Solutions/tree/master/0217-contains-duplicate) |
+## Hash Table
+|  |
+| ------- |
+| [0217-contains-duplicate](https://github.com/williamllin/LeetCode-Solutions/tree/master/0217-contains-duplicate) |
+## Sorting
+|  |
+| ------- |
+| [0217-contains-duplicate](https://github.com/williamllin/LeetCode-Solutions/tree/master/0217-contains-duplicate) |
 <!---LeetCode Topics End-->
