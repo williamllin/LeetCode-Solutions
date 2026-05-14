@@ -7,3 +7,5 @@ def find_patients(patients: pd.DataFrame) -> pd.DataFrame:
     df = patients[con1]
     result = df[['patient_id','patient_name','conditions']]
     return result
+
+
