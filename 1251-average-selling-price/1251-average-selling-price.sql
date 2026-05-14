@@ -4,5 +4,5 @@ from prices p
     left join unitssold u
         on p.product_id = u.product_id
         and u.purchase_date between p.start_date and p.end_date 
-        #not where u.pur..., since we want products no one bought still be on the chart
+        #not "where u.pur...between...", since we want products no one bought still be on the chart
 group by p.product_id
