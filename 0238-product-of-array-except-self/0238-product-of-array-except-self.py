@@ -21,6 +21,6 @@ class Solution:
 
 
         #for迴圈邏輯: 先把目前左邊累積的成果（prefix_product）送給 res[i]，送完之後，再把現在的 nums[i] 乘進去，留給下一個人用。
-        
-        #當 i = 0 (數字是 2)：res[0] = prefix_product $\rightarrow$ 此時 prefix_product 是 1（因為 2 的左邊沒有任何人，所以是 1）。此時 res = [1, 1, 1, 1]。更新留給下一個人的：prefix_product = 1 * 2 = 2。
-        #當 i = 1 (數字是 3)：res[1] = prefix_product $\rightarrow$ 把剛才算好左邊的 2 送給它。此時 res = [1, 2, 1, 1]。更新留給下一個人的：prefix_product = 2 * 3 = 6。
+
+        #當 i = 0 (數字是 2)：res[0] = prefix_product -> 此時 prefix_product 是 1（因為 2 的左邊沒有任何人，所以是 1）。此時 res = [1, 1, 1, 1]。更新留給下一個人的：prefix_product = 1 * 2 = 2。
+        #當 i = 1 (數字是 3)：res[1] = prefix_product -> 把剛才算好左邊的 2 送給它。此時 res = [1, 2, 1, 1]。更新留給下一個人的：prefix_product = 2 * 3 = 6。
