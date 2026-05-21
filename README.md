@@ -11,6 +11,7 @@ LeetCode-Solutions
 | [0178-rank-scores](https://github.com/williamllin/LeetCode-Solutions/tree/master/0178-rank-scores) |
 | [0183-customers-who-never-order](https://github.com/williamllin/LeetCode-Solutions/tree/master/0183-customers-who-never-order) |
 | [0184-department-highest-salary](https://github.com/williamllin/LeetCode-Solutions/tree/master/0184-department-highest-salary) |
+| [0196-delete-duplicate-emails](https://github.com/williamllin/LeetCode-Solutions/tree/master/0196-delete-duplicate-emails) |
 | [0550-game-play-analysis-iv](https://github.com/williamllin/LeetCode-Solutions/tree/master/0550-game-play-analysis-iv) |
 | [0570-managers-with-at-least-5-direct-reports](https://github.com/williamllin/LeetCode-Solutions/tree/master/0570-managers-with-at-least-5-direct-reports) |
 | [0584-find-customer-referee](https://github.com/williamllin/LeetCode-Solutions/tree/master/0584-find-customer-referee) |
