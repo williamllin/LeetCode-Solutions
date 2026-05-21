@@ -10,6 +10,7 @@ LeetCode-Solutions
 | [0177-nth-highest-salary](https://github.com/williamllin/LeetCode-Solutions/tree/master/0177-nth-highest-salary) |
 | [0183-customers-who-never-order](https://github.com/williamllin/LeetCode-Solutions/tree/master/0183-customers-who-never-order) |
 | [0184-department-highest-salary](https://github.com/williamllin/LeetCode-Solutions/tree/master/0184-department-highest-salary) |
+| [0550-game-play-analysis-iv](https://github.com/williamllin/LeetCode-Solutions/tree/master/0550-game-play-analysis-iv) |
 | [0570-managers-with-at-least-5-direct-reports](https://github.com/williamllin/LeetCode-Solutions/tree/master/0570-managers-with-at-least-5-direct-reports) |
 | [0584-find-customer-referee](https://github.com/williamllin/LeetCode-Solutions/tree/master/0584-find-customer-referee) |
 | [0595-big-countries](https://github.com/williamllin/LeetCode-Solutions/tree/master/0595-big-countries) |
