@@ -39,6 +39,7 @@ LeetCode-Solutions
 | [1757-recyclable-and-low-fat-products](https://github.com/williamllin/LeetCode-Solutions/tree/master/1757-recyclable-and-low-fat-products) |
 | [1795-rearrange-products-table](https://github.com/williamllin/LeetCode-Solutions/tree/master/1795-rearrange-products-table) |
 | [1873-calculate-special-bonus](https://github.com/williamllin/LeetCode-Solutions/tree/master/1873-calculate-special-bonus) |
+| [1907-count-salary-categories](https://github.com/williamllin/LeetCode-Solutions/tree/master/1907-count-salary-categories) |
 | [1934-confirmation-rate](https://github.com/williamllin/LeetCode-Solutions/tree/master/1934-confirmation-rate) |
 | [2356-number-of-unique-subjects-taught-by-each-teacher](https://github.com/williamllin/LeetCode-Solutions/tree/master/2356-number-of-unique-subjects-taught-by-each-teacher) |
 ## Array
