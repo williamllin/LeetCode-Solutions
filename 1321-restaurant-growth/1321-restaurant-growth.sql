@@ -1,22 +1,18 @@
-# Write your MySQL query statement below
-WITH DailyAmount AS (
-    SELECT visited_on, SUM(amount) AS day_amount
-    FROM Customer
-    GROUP BY visited_on
+with damount as(
+    select visited_on, sum(amount) as dailyamount
+    from customer
+    group by visited_on
 ),
 
-MovingMetrics AS (
-    SELECT 
-        visited_on,
-        #sum of today + last 6
-        SUM(day_amount) OVER(ORDER BY visited_on ROWS 6 PRECEDING) AS amount,
-        #7 days average
-        ROUND(AVG(day_amount) OVER(ORDER BY visited_on ROWS 6 PRECEDING), 2) AS average_amount,
-        #put number on days, since first 6 days need to be filtered
-        ROW_NUMBER() OVER(ORDER BY visited_on) AS rn
-    FROM DailyAmount
+movingmetrics as (
+    select visited_on,
+    sum(dailyamount)over(order by visited_on rows 6 preceding) as amount,
+    round(avg(dailyamount)over(order by visited_on rows 6 preceding),2) as average_amount,
+    row_number()over(order by visited_on) as rn
+    from damount
 )
-SELECT visited_on, amount, average_amount
-FROM MovingMetrics
-WHERE rn >= 7
-ORDER BY visited_on ASC;
+
+select visited_on, amount, average_amount
+from movingmetrics 
+where rn>=7
+order by visited_on asc
