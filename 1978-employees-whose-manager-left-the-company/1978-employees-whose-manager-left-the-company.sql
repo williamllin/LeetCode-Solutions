@@ -8,3 +8,19 @@ where salary<30000 and manager_id not in (
     from employees
 )
 order by employee_id asc
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
