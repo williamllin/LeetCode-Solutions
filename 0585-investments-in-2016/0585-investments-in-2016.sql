@@ -1,4 +1,6 @@
-# Write your MySQL query statement below
+
+#con1: more than one same 2015 investment
+#con2: different cities
 select round(sum(tiv_2016),2) as tiv_2016
 from insurance
 where tiv_2015 in (
