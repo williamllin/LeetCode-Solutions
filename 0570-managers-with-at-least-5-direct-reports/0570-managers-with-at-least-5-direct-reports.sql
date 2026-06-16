@@ -1,5 +1,16 @@
 # Write your MySQL query statement below
 
+/*
+SELECT name 
+FROM Employee 
+WHERE id IN (
+    SELECT managerId 
+    FROM Employee 
+    GROUP BY managerId 
+    HAVING COUNT(id) >= 5
+)
+*/
+
 select ma.name
 from employee e
     join (select id, name #inner join to void manager id that doesn't exist in this company(ex:100)
