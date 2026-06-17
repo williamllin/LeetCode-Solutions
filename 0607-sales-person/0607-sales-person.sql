@@ -1,7 +1,7 @@
 # Write your MySQL query statement below
 select name
 from salesperson
-where sales_id not in (
+where sales_id not in ( #where xxx IN/NOT IN, if where xxx is one column, the subquery should be one column as well
     select o.sales_id
     from orders o
     join company c
