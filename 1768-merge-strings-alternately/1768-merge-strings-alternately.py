@@ -15,7 +15,7 @@ class Solution:
             result.append(word1[i:])
         if j < len(word2):
             result.append(word2[j:])
-        return "".join(result)
+        return "".join(result)#stick the rest with no space
 
 
         
