@@ -92,6 +92,7 @@ LeetCode-Solutions
 | ------- |
 | [0049-group-anagrams](https://github.com/williamllin/LeetCode-Solutions/tree/master/0049-group-anagrams) |
 | [0242-valid-anagram](https://github.com/williamllin/LeetCode-Solutions/tree/master/0242-valid-anagram) |
+| [1768-merge-strings-alternately](https://github.com/williamllin/LeetCode-Solutions/tree/master/1768-merge-strings-alternately) |
 ## Divide and Conquer
 |  |
 | ------- |
@@ -116,4 +117,8 @@ LeetCode-Solutions
 |  |
 | ------- |
 | [0238-product-of-array-except-self](https://github.com/williamllin/LeetCode-Solutions/tree/master/0238-product-of-array-except-self) |
+## Two Pointers
+|  |
+| ------- |
+| [1768-merge-strings-alternately](https://github.com/williamllin/LeetCode-Solutions/tree/master/1768-merge-strings-alternately) |
 <!---LeetCode Topics End-->
