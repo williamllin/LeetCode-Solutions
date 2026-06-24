@@ -75,6 +75,7 @@ LeetCode-Solutions
 | [0217-contains-duplicate](https://github.com/williamllin/LeetCode-Solutions/tree/master/0217-contains-duplicate) |
 | [0238-product-of-array-except-self](https://github.com/williamllin/LeetCode-Solutions/tree/master/0238-product-of-array-except-self) |
 | [0347-top-k-frequent-elements](https://github.com/williamllin/LeetCode-Solutions/tree/master/0347-top-k-frequent-elements) |
+| [1431-kids-with-the-greatest-number-of-candies](https://github.com/williamllin/LeetCode-Solutions/tree/master/1431-kids-with-the-greatest-number-of-candies) |
 ## Hash Table
 |  |
 | ------- |
