@@ -5,7 +5,7 @@ from activity a1
         and a1.process_id = a2.process_id
 where a1.activity_type like 'end'
     and a2.activity_type like 'start'
-group by a1.machine_id
+group by a1.machine_id 
 
 
 
