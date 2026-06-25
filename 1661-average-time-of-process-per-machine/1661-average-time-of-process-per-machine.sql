@@ -1,5 +1,3 @@
-
-
 select a1.machine_id, round(avg(a1.timestamp - a2.timestamp),3) as processing_time
 from activity a1
     join activity a2
