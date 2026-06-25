@@ -18,11 +18,6 @@ order by st.student_id, su.subject_name
 
 
 
-
-
-
-
-
 /*
 select st.student_id, st.student_name, su.subject_name, count(e.subject_name) as attended_exams
 from students st
