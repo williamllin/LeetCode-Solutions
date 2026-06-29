@@ -8,3 +8,4 @@ where (customer_id, order_date) in (
     from delivery
     group by customer_id
 )
+
