@@ -6,3 +6,4 @@ where (product_id, year) in ( #in case price,quant get distributed randomly, we 
     from sales
     group by product_id
 )
+
