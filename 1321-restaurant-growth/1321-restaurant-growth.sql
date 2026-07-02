@@ -1,18 +1,19 @@
-WITH dayamount AS (
-    SELECT visited_on, SUM(amount) AS dailyamount
-    FROM customer
-    GROUP BY visited_on
+
+
+with dailyamount as (
+    select visited_on, sum(amount) as daily_amount
+    from customer
+    group by visited_on
 ),
 
-movingmetrics AS (
-    SELECT 
+movingmetrics as (
+    select 
         visited_on,
-        SUM(dailyamount) OVER(ORDER BY visited_on ROWS 6 PRECEDING) AS amount,
-        ROUND(AVG(dailyamount) OVER(ORDER BY visited_on ROWS 6 PRECEDING), 2) AS average_amount
-    FROM dayamount
+        sum(daily_amount)over(order by visited_on rows 6 preceding) as amount,
+        round(avg(daily_amount)over(order by visited_on rows 6 preceding),2) as average_amount
+    from dailyamount
 )
-
-SELECT visited_on, amount, average_amount
-FROM movingmetrics
-WHERE DATEDIFF(visited_on, (SELECT MIN(visited_on) FROM customer)) >= 6
-ORDER BY visited_on ASC;
+select visited_on, amount, average_amount
+from movingmetrics
+where datediff(visited_on, (select min(visited_on) from movingmetrics)) >=6
+order by visited_on asc
