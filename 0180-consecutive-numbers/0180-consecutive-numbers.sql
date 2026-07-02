@@ -1,7 +1,6 @@
-# Write your MySQL query statement below
 with preparedtable as (
     select num,
-        lead(num, 1)over(order by id) as nextnum,
+        lead(num, 1)over(order by id) as nextnum, #lead() will move down the column to scan
         lead(num, 2)over(order by id) as nextnextnum
     from logs
 )
