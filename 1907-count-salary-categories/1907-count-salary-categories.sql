@@ -1,5 +1,3 @@
-
-#union: remove replicates, union all: do not
 select 
     'Low Salary' as category,
     sum(case when income <20000 then 1 else 0 end) as accounts_count
@@ -17,8 +15,5 @@ union all
 select 
     'High Salary' as category,
     sum(case when income >50000 then 1 else 0 end) as accounts_count
-from accounts;
-
-
-
+from accounts
 
