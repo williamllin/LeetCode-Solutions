@@ -1,4 +1,3 @@
-
 #con1: more than one same 2015 investment
 #con2: different cities
 select round(sum(tiv_2016),2) as tiv_2016
@@ -15,3 +14,15 @@ where tiv_2015 in (
         group by lat, lon
         having count(*) = 1
     )
+
+
+
+
+
+
+
+
+
+
+
+
