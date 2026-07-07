@@ -4,8 +4,8 @@ with rankedsalary as (
         e.name as Employee,
         e.salary as Salary,
         dense_rank()over(
-            partition by e.departmentId
-            order by e.salary desc
+            partition by e.departmentId #within each department(partition by)
+            order by e.salary desc      #rank salary(order by)
         ) as salary_rank
     from employee e
         inner join department d
