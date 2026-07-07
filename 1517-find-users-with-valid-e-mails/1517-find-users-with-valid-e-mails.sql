@@ -1,5 +1,3 @@
-# Write your MySQL query statement below
-
 #too many conditions, so using where xxx LIKE and xxx NOT LIKE.... won't work
 
 #regular expression
