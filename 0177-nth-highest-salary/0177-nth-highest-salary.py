@@ -14,4 +14,7 @@ def nth_highest_salary(employee: pd.DataFrame, N: int) -> pd.DataFrame:
         ans = sorted_salaries.iloc[N-1]
 
     return pd.DataFrame({f'getNthHighestSalary({N})': [ans]})
+
+
+
         
