@@ -80,6 +80,7 @@ LeetCode-Solutions
 | [0334-increasing-triplet-subsequence](https://github.com/williamllin/LeetCode-Solutions/tree/master/0334-increasing-triplet-subsequence) |
 | [0347-top-k-frequent-elements](https://github.com/williamllin/LeetCode-Solutions/tree/master/0347-top-k-frequent-elements) |
 | [0605-can-place-flowers](https://github.com/williamllin/LeetCode-Solutions/tree/master/0605-can-place-flowers) |
+| [0643-maximum-average-subarray-i](https://github.com/williamllin/LeetCode-Solutions/tree/master/0643-maximum-average-subarray-i) |
 | [1431-kids-with-the-greatest-number-of-candies](https://github.com/williamllin/LeetCode-Solutions/tree/master/1431-kids-with-the-greatest-number-of-candies) |
 | [1679-max-number-of-k-sum-pairs](https://github.com/williamllin/LeetCode-Solutions/tree/master/1679-max-number-of-k-sum-pairs) |
 ## Hash Table
@@ -159,4 +160,8 @@ LeetCode-Solutions
 |  |
 | ------- |
 | [0392-is-subsequence](https://github.com/williamllin/LeetCode-Solutions/tree/master/0392-is-subsequence) |
+## Sliding Window
+|  |
+| ------- |
+| [0643-maximum-average-subarray-i](https://github.com/williamllin/LeetCode-Solutions/tree/master/0643-maximum-average-subarray-i) |
 <!---LeetCode Topics End-->
