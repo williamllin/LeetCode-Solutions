@@ -81,6 +81,7 @@ LeetCode-Solutions
 | [0347-top-k-frequent-elements](https://github.com/williamllin/LeetCode-Solutions/tree/master/0347-top-k-frequent-elements) |
 | [0605-can-place-flowers](https://github.com/williamllin/LeetCode-Solutions/tree/master/0605-can-place-flowers) |
 | [1431-kids-with-the-greatest-number-of-candies](https://github.com/williamllin/LeetCode-Solutions/tree/master/1431-kids-with-the-greatest-number-of-candies) |
+| [1679-max-number-of-k-sum-pairs](https://github.com/williamllin/LeetCode-Solutions/tree/master/1679-max-number-of-k-sum-pairs) |
 ## Hash Table
 |  |
 | ------- |
@@ -89,6 +90,7 @@ LeetCode-Solutions
 | [0217-contains-duplicate](https://github.com/williamllin/LeetCode-Solutions/tree/master/0217-contains-duplicate) |
 | [0242-valid-anagram](https://github.com/williamllin/LeetCode-Solutions/tree/master/0242-valid-anagram) |
 | [0347-top-k-frequent-elements](https://github.com/williamllin/LeetCode-Solutions/tree/master/0347-top-k-frequent-elements) |
+| [1679-max-number-of-k-sum-pairs](https://github.com/williamllin/LeetCode-Solutions/tree/master/1679-max-number-of-k-sum-pairs) |
 ## Sorting
 |  |
 | ------- |
@@ -96,6 +98,7 @@ LeetCode-Solutions
 | [0217-contains-duplicate](https://github.com/williamllin/LeetCode-Solutions/tree/master/0217-contains-duplicate) |
 | [0242-valid-anagram](https://github.com/williamllin/LeetCode-Solutions/tree/master/0242-valid-anagram) |
 | [0347-top-k-frequent-elements](https://github.com/williamllin/LeetCode-Solutions/tree/master/0347-top-k-frequent-elements) |
+| [1679-max-number-of-k-sum-pairs](https://github.com/williamllin/LeetCode-Solutions/tree/master/1679-max-number-of-k-sum-pairs) |
 ## String
 |  |
 | ------- |
@@ -140,6 +143,7 @@ LeetCode-Solutions
 | [0345-reverse-vowels-of-a-string](https://github.com/williamllin/LeetCode-Solutions/tree/master/0345-reverse-vowels-of-a-string) |
 | [0392-is-subsequence](https://github.com/williamllin/LeetCode-Solutions/tree/master/0392-is-subsequence) |
 | [0443-string-compression](https://github.com/williamllin/LeetCode-Solutions/tree/master/0443-string-compression) |
+| [1679-max-number-of-k-sum-pairs](https://github.com/williamllin/LeetCode-Solutions/tree/master/1679-max-number-of-k-sum-pairs) |
 | [1768-merge-strings-alternately](https://github.com/williamllin/LeetCode-Solutions/tree/master/1768-merge-strings-alternately) |
 ## Math
 |  |
