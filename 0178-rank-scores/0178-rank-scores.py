@@ -1,13 +1,12 @@
 import pandas as pd
 
 def order_scores(scores: pd.DataFrame) -> pd.DataFrame:
-    #if score table is empty, return empty table
+    
+    #if empty, return empty
     if scores.empty:
-        return pd.DataFrame(columns=['score', 'rank'])
-    
-    #method='dense' -> if same score, get same rank
-    scores['rank'] = scores['score'].rank(method='dense', ascending=False)
+        return pd.DataFrame(columns=['score','rank'])
 
-    result = scores.sort_values(by='score',ascending = False)[['score','rank']]
+    scores['rank'] = scores['score'].rank(method='dense',ascending=False)#dense:same score get same rank
+
+    result = scores.sort_values(by='score',ascending=False)[['score','rank']]
     return result
-    
