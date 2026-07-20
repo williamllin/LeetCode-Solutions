@@ -1,5 +1,7 @@
 class Solution:
     def longestSubarray(self, nums: List[int]) -> int:
+        #delete one '0' -> find longest 1s with one '0', and then minus 1
+        #Question 1004 but as k=1
         left = 0
         zero_count = 0
         max_len = 0
