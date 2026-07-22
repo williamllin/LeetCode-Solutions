@@ -7,3 +7,4 @@ class Solution:
             current_alt = current_alt + int(gain[i])
             max_alt = max(max_alt, current_alt)
         return max_alt
+        
