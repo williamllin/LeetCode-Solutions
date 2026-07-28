@@ -87,6 +87,7 @@ LeetCode-Solutions
 | [1493-longest-subarray-of-1s-after-deleting-one-element](https://github.com/williamllin/LeetCode-Solutions/tree/master/1493-longest-subarray-of-1s-after-deleting-one-element) |
 | [1679-max-number-of-k-sum-pairs](https://github.com/williamllin/LeetCode-Solutions/tree/master/1679-max-number-of-k-sum-pairs) |
 | [1732-find-the-highest-altitude](https://github.com/williamllin/LeetCode-Solutions/tree/master/1732-find-the-highest-altitude) |
+| [2215-find-the-difference-of-two-arrays](https://github.com/williamllin/LeetCode-Solutions/tree/master/2215-find-the-difference-of-two-arrays) |
 ## Hash Table
 |  |
 | ------- |
@@ -96,6 +97,7 @@ LeetCode-Solutions
 | [0242-valid-anagram](https://github.com/williamllin/LeetCode-Solutions/tree/master/0242-valid-anagram) |
 | [0347-top-k-frequent-elements](https://github.com/williamllin/LeetCode-Solutions/tree/master/0347-top-k-frequent-elements) |
 | [1679-max-number-of-k-sum-pairs](https://github.com/williamllin/LeetCode-Solutions/tree/master/1679-max-number-of-k-sum-pairs) |
+| [2215-find-the-difference-of-two-arrays](https://github.com/williamllin/LeetCode-Solutions/tree/master/2215-find-the-difference-of-two-arrays) |
 ## Sorting
 |  |
 | ------- |
