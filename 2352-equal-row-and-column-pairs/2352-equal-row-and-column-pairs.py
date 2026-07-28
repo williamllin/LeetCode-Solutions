@@ -12,8 +12,8 @@ class Solution:
         ans = 0
 
         #take out each column and compare
-        for c in range(n):
-            col = tuple(grid[r][c] for r in range(n))
-            ans += row_counts[col] #if col in row_counts, add 
+        for c in range(n):#c column
+            col = tuple(grid[r][c] for r in range(n))#if col in row_counts, add 
+            ans += row_counts[col] 
 
         return ans
