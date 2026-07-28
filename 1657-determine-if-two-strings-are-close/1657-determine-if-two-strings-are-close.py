@@ -10,5 +10,5 @@ class Solution:
         if set(c1.keys()) != set(c2.keys()):
             return False
 
-        #operation2: the set of number of occurence must be the same ([a2c3b4] [c2b3a4](O))
+        #operation2: the 'set of number' 'of occurence' must be the same ([a2c3b4] [c2b3a4](O))
         return sorted(c1.values()) == sorted(c2.values())
