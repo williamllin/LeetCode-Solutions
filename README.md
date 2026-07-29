@@ -189,6 +189,7 @@ LeetCode-Solutions
 ## Binary Search
 |  |
 | ------- |
+| [0374-guess-number-higher-or-lower](https://github.com/williamllin/LeetCode-Solutions/tree/master/0374-guess-number-higher-or-lower) |
 | [1004-max-consecutive-ones-iii](https://github.com/williamllin/LeetCode-Solutions/tree/master/1004-max-consecutive-ones-iii) |
 ## Matrix
 |  |
@@ -198,4 +199,8 @@ LeetCode-Solutions
 |  |
 | ------- |
 | [2352-equal-row-and-column-pairs](https://github.com/williamllin/LeetCode-Solutions/tree/master/2352-equal-row-and-column-pairs) |
+## Interactive
+|  |
+| ------- |
+| [0374-guess-number-higher-or-lower](https://github.com/williamllin/LeetCode-Solutions/tree/master/0374-guess-number-higher-or-lower) |
 <!---LeetCode Topics End-->
