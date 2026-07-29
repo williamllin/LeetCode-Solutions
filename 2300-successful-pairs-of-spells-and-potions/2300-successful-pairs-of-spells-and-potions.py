@@ -5,19 +5,22 @@ class Solution:
         ans = []
 
         for spell in spells:
-            min_potion_required = (success + spell - 1) // spell
+            min_potion_required = (success + spell - 1)//spell #spell*potion>=success, potion>=success//spell
+            #7//5=1, but we need at least 2, so use integer arithmetic((7+5-1)//5=2)
+
+            #Binary search for the first potion >= min_potion
             left, right = 0, m - 1
-            idx = m  # 預設為 m，代表如果都沒找到，符合數就是 m - m = 0
+            idx = m #Default to m if no potion satisfies the condition
             
             while left <= right:
                 mid = (left + right) // 2
                 if potions[mid] >= min_potion_required:
-                    idx = mid         # 找到了，但繼續往左邊找「更靠左」的第一個符合位置
+                    idx = mid
                     right = mid - 1
                 else:
                     left = mid + 1
             
-            # 成功數量 = 總長度 - 第一個符合條件的 Index
+            #All potions from 'idx' to the end are valid
             ans.append(m - idx)
             
         return ans
