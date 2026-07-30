@@ -1,4 +1,3 @@
-
 select product_id, year as first_year, quantity, price
 from sales
 where (product_id, year) in ( #in case price,quant get distributed randomly, we locked in id, year together
