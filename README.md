@@ -74,6 +74,7 @@ LeetCode-Solutions
 | [0001-two-sum](https://github.com/williamllin/LeetCode-Solutions/tree/master/0001-two-sum) |
 | [0011-container-with-most-water](https://github.com/williamllin/LeetCode-Solutions/tree/master/0011-container-with-most-water) |
 | [0049-group-anagrams](https://github.com/williamllin/LeetCode-Solutions/tree/master/0049-group-anagrams) |
+| [0162-find-peak-element](https://github.com/williamllin/LeetCode-Solutions/tree/master/0162-find-peak-element) |
 | [0217-contains-duplicate](https://github.com/williamllin/LeetCode-Solutions/tree/master/0217-contains-duplicate) |
 | [0238-product-of-array-except-self](https://github.com/williamllin/LeetCode-Solutions/tree/master/0238-product-of-array-except-self) |
 | [0283-move-zeroes](https://github.com/williamllin/LeetCode-Solutions/tree/master/0283-move-zeroes) |
@@ -192,6 +193,7 @@ LeetCode-Solutions
 ## Binary Search
 |  |
 | ------- |
+| [0162-find-peak-element](https://github.com/williamllin/LeetCode-Solutions/tree/master/0162-find-peak-element) |
 | [0374-guess-number-higher-or-lower](https://github.com/williamllin/LeetCode-Solutions/tree/master/0374-guess-number-higher-or-lower) |
 | [1004-max-consecutive-ones-iii](https://github.com/williamllin/LeetCode-Solutions/tree/master/1004-max-consecutive-ones-iii) |
 | [2300-successful-pairs-of-spells-and-potions](https://github.com/williamllin/LeetCode-Solutions/tree/master/2300-successful-pairs-of-spells-and-potions) |
