@@ -6,14 +6,12 @@ class Solution:
         left, right = 1, max(piles)
         while left < right:
             mid = (left+right)//2
+            total_hours = sum((pile + mid - 1) // mid for pile in piles)#hours=piles/k, but need int
 
-            total_hours = sum((pile + mid - 1) // mid for pile in piles)
-
-            if total_hours <=h:
-                right = mid
-            else: 
+            if total_hours >h:
                 left = mid+1
-        
+            else: 
+                right = mid
         return left
 '''      
 piles = [30,11,23,4,20], h = 5
