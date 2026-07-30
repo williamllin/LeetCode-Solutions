@@ -83,6 +83,7 @@ LeetCode-Solutions
 | [0605-can-place-flowers](https://github.com/williamllin/LeetCode-Solutions/tree/master/0605-can-place-flowers) |
 | [0643-maximum-average-subarray-i](https://github.com/williamllin/LeetCode-Solutions/tree/master/0643-maximum-average-subarray-i) |
 | [0724-find-pivot-index](https://github.com/williamllin/LeetCode-Solutions/tree/master/0724-find-pivot-index) |
+| [0875-koko-eating-bananas](https://github.com/williamllin/LeetCode-Solutions/tree/master/0875-koko-eating-bananas) |
 | [1004-max-consecutive-ones-iii](https://github.com/williamllin/LeetCode-Solutions/tree/master/1004-max-consecutive-ones-iii) |
 | [1207-unique-number-of-occurrences](https://github.com/williamllin/LeetCode-Solutions/tree/master/1207-unique-number-of-occurrences) |
 | [1431-kids-with-the-greatest-number-of-candies](https://github.com/williamllin/LeetCode-Solutions/tree/master/1431-kids-with-the-greatest-number-of-candies) |
@@ -195,6 +196,7 @@ LeetCode-Solutions
 | ------- |
 | [0162-find-peak-element](https://github.com/williamllin/LeetCode-Solutions/tree/master/0162-find-peak-element) |
 | [0374-guess-number-higher-or-lower](https://github.com/williamllin/LeetCode-Solutions/tree/master/0374-guess-number-higher-or-lower) |
+| [0875-koko-eating-bananas](https://github.com/williamllin/LeetCode-Solutions/tree/master/0875-koko-eating-bananas) |
 | [1004-max-consecutive-ones-iii](https://github.com/williamllin/LeetCode-Solutions/tree/master/1004-max-consecutive-ones-iii) |
 | [2300-successful-pairs-of-spells-and-potions](https://github.com/williamllin/LeetCode-Solutions/tree/master/2300-successful-pairs-of-spells-and-potions) |
 ## Matrix
