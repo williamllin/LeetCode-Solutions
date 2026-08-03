@@ -1,5 +1,4 @@
 #too many conditions, so using where xxx LIKE and xxx NOT LIKE.... won't work
-
 #regular expression
 select user_id, name, mail
 from users
