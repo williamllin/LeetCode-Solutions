@@ -16,3 +16,4 @@ with rankedemployee as (
 select max(salary) as SecondHighestSalary
 from rankedemployee
 where salary_rank = 2
+
