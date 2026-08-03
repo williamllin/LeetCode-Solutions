@@ -12,12 +12,12 @@ def department_highest_salary(employee: pd.DataFrame, department: pd.DataFrame) 
     #select salaries that are max 
     result = df[df['salary'] == df['max_salary']]
 
-    #result
+    #result.
     result = result[['name_dep','name_emp','salary']]
     result.columns = ['Department','Employee','Salary']
     return result
 
-    
+
 
 
 
