@@ -1,4 +1,4 @@
-
+/*
 #先弄id, price然後cross join那段是把store欄位變成store1..., 最後在過濾null
 SELECT 
     p.product_id,
@@ -42,3 +42,19 @@ SELECT product_id, 'store3' AS store, store3 AS price
 FROM products
 WHERE store3 IS NOT NULL;
 */
+
+select product_id, 'store1' as store, store1 as price
+from products
+where store1 is not null
+
+union all
+
+select product_id, 'store2' as store, store2 as price
+from products
+where store2 is not null
+
+union all
+
+select product_id, 'store3' as store, store3 as price
+from products
+where store3 is not null
