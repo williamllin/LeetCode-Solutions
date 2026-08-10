@@ -211,4 +211,8 @@ LeetCode-Solutions
 |  |
 | ------- |
 | [0374-guess-number-higher-or-lower](https://github.com/williamllin/LeetCode-Solutions/tree/master/0374-guess-number-higher-or-lower) |
+## Longest Increasing Subsequence
+|  |
+| ------- |
+| [0334-increasing-triplet-subsequence](https://github.com/williamllin/LeetCode-Solutions/tree/master/0334-increasing-triplet-subsequence) |
 <!---LeetCode Topics End-->
