@@ -44,4 +44,3 @@ where salary_rank <=3
 
 
 
-
