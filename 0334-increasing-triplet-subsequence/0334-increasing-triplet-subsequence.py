@@ -13,3 +13,4 @@ class Solution:
                 return True #num is bigger than first and second->assign to third->True
 
         return False
+
