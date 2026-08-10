@@ -1,12 +1,4 @@
 /*
-select(
-    select distinct salary
-    from employee
-    order by salary desc
-    limit 1 offset 1
-) as SecondHighestSalary
-*/
-
 with rankedemployee as (
     select salary,
     dense_rank()over(order by salary desc) as salary_rank
@@ -16,4 +8,13 @@ with rankedemployee as (
 select max(salary) as SecondHighestSalary
 from rankedemployee
 where salary_rank = 2
+*/
+with rankedsalary as(
+    select id, salary,
+        dense_rank()over(order by salary desc) as salary_ranked
+    from employee
+)
 
+select max(salary) as SecondHighestSalary
+from rankedsalary
+where salary_ranked = 2
