@@ -14,7 +14,7 @@ def order_scores(scores: pd.DataFrame) -> pd.DataFrame:
     if scores.empty:
         return pd.DataFrame(columns=['score','rank'])
     
-    scores['rank'] = scores['score'].rank(method='dense', ascending=False)#dense: same score, same rank
-
-    result = scores.sort_values(by='score', ascending=False)[['score','rank']]
+    scores['rank'] = scores['score'].rank(method='dense',ascending=False)
+    result = scores.sort_values(by='score',ascending=False)[['score','rank']]
     return result
+
