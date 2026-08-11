@@ -3,21 +3,36 @@
 #from typing import List
 
 
-#當我們把元素丟進 Heap 時，如果 Heap 的大小超過了 $K$，就把此時「頻率最低」的頂端元素踢出去（heappop）。這樣一路走到最後，留在 Heap 裡面的，絕對就是全場最高頻的前 $K$ 個元素。
+#heap堆積: 只保證最頂端是極值，不保證整組資料是排序好的
+
+
 class Solution:
     def topKFrequent(self, nums: List[int], k: int) -> List[int]:
-        #Count the frequency of each number
-        count = Counter(nums) #[1,1,1,2,2,3] -> {1: 3, 2: 2, 3: 1}
-        
-        #Maintain a Min-Heap of size K
-        heap = []
-        for num, freq in count.items():#items() so that get key and value
-            #Python's heapq sorts by the first element of the tuple (freq)
-            heapq.heappush(heap, (freq, num))
+        #Step 1: Count the frequency of each number
+        #Ex: [1,1,1,2,2,3] -> {1: 3, 2: 2, 3: 1}
+        count = Counter(nums)
 
-            # If heap size exceeds K, pop the element with the lowest frequency
-            if len(heap) > k:
+        #Step 2: Initialize an empty list to serve as our Min-Heap
+        heap =[]
+
+        #Step 3: Iterate through unique numbers and their frequencies
+        for num, freq in count.items():
+
+            heapq.heappush(heap,(freq,num))#Push (freq, num) tuple into the heap, heapq:smallest on top, if want biggest: -num
+
+            if len(heap)>k:#Keep heap size <= k by removing the element with the smallest frequency
                 heapq.heappop(heap)
-        #Extract the numbers left in the heap (the top K frequent elements)      
-        return [num for freq, num in heap]
-        
+
+        #Step 4: Extract and return the numbers from the top k elements left in the heap
+        return [num for freq, num in heap]        
+
+
+
+
+
+
+
+
+
+
+
