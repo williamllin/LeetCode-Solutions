@@ -15,8 +15,8 @@ def daily_leads_and_partners(daily_sales: pd.DataFrame) -> pd.DataFrame:
         'lead_id':'nunique',
         'partner_id':'nunique'
     }).reset_index()
-    df_res = df_res.rename(columns={'lead_id':'unique_leads', 'partner_id':'unique_partners'})
-    return df_res
+    result = df_res.rename(columns={'lead_id':'unique_leads','partner_id':'unique_partners'})
+    return result
 
 
     #result = daily_sales.groupby(['date_id', 'make_name']).agg(
