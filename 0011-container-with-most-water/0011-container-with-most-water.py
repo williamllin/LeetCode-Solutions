@@ -1,5 +1,6 @@
 class Solution:
     def maxArea(self, height: List[int]) -> int:
+        '''
         #初始化雙指標，站在最兩端（此時底最大）
         left = 0
         right = len(height) - 1
@@ -21,3 +22,25 @@ class Solution:
                 right -= 1
                 
         return max_water
+        '''
+
+        left = 0
+        right = len(height)-1
+        max_water = 0
+
+        while left<right:
+            width = right-left
+            current_height = min(height[left],height[right])
+            current_water = width*current_height
+
+            max_water = max(max_water, current_water)
+
+            if height[left]<height[right]:#move towards each other to find higher poll
+                left+=1
+            else:
+                right-=1
+        return max_water
+
+
+
+
