@@ -1,7 +1,3 @@
-
-#count(e.subject_name) so that there's 'NULL' to be displayed as '0'
-#cross join makes every students match each subject, doesn't matter if they took it or not
-
 /*
 select st.student_id, st.student_name, su.subject_name, count(e.subject_name) as attended_exams
 from students st
@@ -14,6 +10,9 @@ group by st.student_id, st.student_name, su.subject_name
 order by st.student_id, su.subject_name
 */
 
+
+#count(e.subject_name) so that there's 'NULL' to be displayed as '0'
+#cross join makes every students match each subject, doesn't matter if they took it or not
 select s.student_id, s.student_name, su.subject_name, count(e.subject_name) as attended_exams
 from students s
 cross join subjects su
@@ -22,9 +21,6 @@ cross join subjects su
         and su.subject_name = e.subject_name
 group by s.student_id, s.student_name, su.subject_name
 order by s.student_id, su.subject_name
-
-
-
 
 
 
