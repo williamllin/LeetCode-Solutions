@@ -14,7 +14,6 @@ group by st.student_id, st.student_name, su.subject_name
 order by st.student_id, su.subject_name
 */
 
-
 select s.student_id, s.student_name, su.subject_name, count(e.subject_name) as attended_exams
 from students s
 cross join subjects su
