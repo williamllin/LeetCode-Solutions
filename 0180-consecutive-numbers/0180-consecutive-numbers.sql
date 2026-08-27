@@ -5,17 +5,17 @@ with preparedtable as (
         lead(num, 2)over(order by id) as nextnextnum
     from logs
 )
+
 select distinct num as ConsecutiveNums
 from preparedtable
 where num = nextnum and num = nextnextnum
 */
-with scantable as(
+with preparedtable as(
     select num,
-        lead(num,1)over(order by id) as next_num,
-        lead(num,2)over(order by id) as nextnext_num
+        lead(num,1)over(order by id) as nextnum,
+        lead(num,2)over(order by id) as nextnextnum
     from logs
 )
-
 select distinct num as ConsecutiveNums
-from scantable
-where num = next_num and next_num = nextnext_num
+from preparedtable
+where num = nextnum and num = nextnextnum
