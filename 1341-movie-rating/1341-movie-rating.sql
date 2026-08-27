@@ -24,22 +24,21 @@ limit 1
 (
     select u.name as results
     from users u
-    join MovieRating mr
-        on u.user_id = mr.user_id
+        join movierating mr
+            on u.user_id = mr.user_id
     group by u.user_id, u.name
     order by count(mr.movie_id) desc, u.name asc
     limit 1
 )
 union all
 (
-    select m.title
-    from movies m
-    join MovieRating mr
-        on m.movie_id = mr.movie_id
+    select mo.title as results
+    from movies mo
+        join movierating mr
+            on mo.movie_id = mr.movie_id
     where mr.created_at between '2020-02-01' and '2020-02-29'
-    group by m.movie_id, m.title
-    order by avg(mr.rating) desc, m.title asc
+    group by mo.movie_id, mo.title
+    order by avg(rating) desc, mo.title asc
     limit 1
 )
-
 
