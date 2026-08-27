@@ -19,3 +19,5 @@ with preparedtable as(
 select distinct num as ConsecutiveNums
 from preparedtable
 where num = nextnum and num = nextnextnum
+#can't write num=nextnum=nextnextnum, since it would then be (True/False) = nextnextnum
+#~ (1 or 0)=nextnextnum
