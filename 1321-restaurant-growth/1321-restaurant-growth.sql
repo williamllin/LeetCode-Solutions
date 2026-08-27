@@ -27,6 +27,7 @@ movingmetrics as(
     select visited_on,
         sum(daily_amount)over(order by visited_on rows 6 preceding) as amount,#sum every 6 days
         round(avg(daily_amount)over(order by visited_on rows 6 preceding),2) as average_amount
+        #avg every 6 days
     from dailyamount
 )
 select visited_on, amount, average_amount
