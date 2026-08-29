@@ -1,3 +1,4 @@
+/*
 #when appear in either requester or accepter, count as a num, since no 'a to b' and 'b accept a' situation 
 with allfriend as (
     select requester_id as id from requestaccepted
@@ -8,6 +9,20 @@ with allfriend as (
 
 select id, count(*) as num
 from allfriend
+group by id
+order by num desc
+limit 1
+*/
+
+
+
+with friends as (
+    select requester_id as id from requestaccepted
+    union all
+    select accepter_id as id from requestaccepted
+)
+select id, count(*) as num
+from friends
 group by id
 order by num desc
 limit 1
