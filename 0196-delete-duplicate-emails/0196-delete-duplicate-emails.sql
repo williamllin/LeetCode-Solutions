@@ -12,7 +12,6 @@ where id not in(
 
 #Cannot select table while delete/update from table, so create table t
 #group by email, and not in 'smallest id'
-
 delete
 from person
 where id not in (
