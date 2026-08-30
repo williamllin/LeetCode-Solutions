@@ -22,7 +22,7 @@ with rankedsalary as (
         d.name as Department,
         e.name as Employee,
         e.salary as salary,
-        dense_rank()over(partition by e.departmentId order by e.salary desc) as sal_rank
+        dense_rank()over(partition by d.id order by e.salary desc) as sal_rank
     from employee e
     inner join department d
         on e.departmentId = d.id
