@@ -17,7 +17,6 @@ select Department, Employee, Salary
 from rankedsalary
 where salary_rank <=3
 */
-
 with rankedsalary as (
     select
         e.name as Employee,
@@ -32,15 +31,3 @@ with rankedsalary as (
 select Department, Employee, Salary
 from rankedsalary
 where salary_rank <=3
-
-
-
-
-
-
-
-
-
-
-
-
