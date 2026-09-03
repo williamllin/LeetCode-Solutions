@@ -1,8 +1,7 @@
 select product_id, year as first_year, quantity, price
 from sales
-where (product_id, year) in ( #in case price,quant get distributed randomly, we locked in id, year together
+where (product_id, year) in (
     select product_id, min(year)
     from sales
     group by product_id
 )
-
