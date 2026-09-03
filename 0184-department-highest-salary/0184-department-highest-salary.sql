@@ -7,7 +7,6 @@ with ranked_salary as(
         join department d
             on e.departmentId = d.id
 )
-
 select Department, Employee, Salary
 from ranked_salary
 where rank_sal = 1
