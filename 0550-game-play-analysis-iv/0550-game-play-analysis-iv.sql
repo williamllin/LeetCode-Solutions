@@ -10,6 +10,8 @@ from (
 #分母:所有人的第一次登入(a1)
 #分子:跟第一次登入差一天的才算(a2)
 */
+
+
 select round(count(a2.player_id)/count(a1.player_id),2) as fraction
 from (
     select player_id, min(event_date) as first_login
