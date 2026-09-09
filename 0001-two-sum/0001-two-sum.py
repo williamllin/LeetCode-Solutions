@@ -9,6 +9,5 @@ class Solution:
             if complement in hashmap:
                 #Return the index of the complement and the current index
                 return [hashmap[complement], i]
-            
             #Otherwise, store the current number and its index for future lookups
             hashmap[num] = i
