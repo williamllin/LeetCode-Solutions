@@ -19,6 +19,5 @@ class Solution:
 
             if len(heap)>k:#Keep heap size <= k by removing the element with the smallest frequency
                 heapq.heappop(heap)
-
         #Step 4: Extract and return the numbers from the top k elements left in the heap
         return [num for freq, num in heap]        
