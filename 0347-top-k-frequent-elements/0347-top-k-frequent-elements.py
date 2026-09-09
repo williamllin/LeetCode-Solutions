@@ -2,10 +2,7 @@
 #from collections import Counter
 #from typing import List
 
-
 #heap堆積: 只保證最頂端是極值，不保證整組資料是排序好的
-
-
 class Solution:
     def topKFrequent(self, nums: List[int], k: int) -> List[int]:
         #Step 1: Count the frequency of each number
@@ -25,14 +22,3 @@ class Solution:
 
         #Step 4: Extract and return the numbers from the top k elements left in the heap
         return [num for freq, num in heap]        
-
-
-
-
-
-
-
-
-
-
-
