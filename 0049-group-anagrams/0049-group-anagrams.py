@@ -5,10 +5,7 @@ class Solution:
         anagram_map = defaultdict(list) 
         #use this instead of {} so that when new key(aet) added will add new [] automatically
         
-
         for s in strs:
             sorted_s = "".join(sorted(s)) # "".join(['a','e','t']) -> aet
             anagram_map[sorted_s].append(s)#use sorted_s as key and throw original char back
         return list(anagram_map.values())
-
-        
