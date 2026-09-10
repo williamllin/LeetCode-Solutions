@@ -10,7 +10,6 @@ def total_time(employees: pd.DataFrame) -> pd.DataFrame:
     result.rename(columns={'event_day': 'day'}, inplace=True)
     return result
     '''
-
     employees['total_time'] = employees['out_time'] - employees['in_time'] #new column
 
     #group by event_day and emp_id. Sum up total time
