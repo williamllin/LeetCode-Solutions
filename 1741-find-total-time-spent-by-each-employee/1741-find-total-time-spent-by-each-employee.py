@@ -17,5 +17,3 @@ def total_time(employees: pd.DataFrame) -> pd.DataFrame:
     result = employees.groupby(['event_day','emp_id'], as_index=False)['total_time'].sum()
     result.rename(columns={'event_day':'day'}, inplace=True)
     return result
-
-
