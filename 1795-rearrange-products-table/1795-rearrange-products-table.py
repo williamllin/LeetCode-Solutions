@@ -13,6 +13,9 @@ def rearrange_products_table(products: pd.DataFrame) -> pd.DataFrame:
     
     return result
     '''
+
+
+
     result = pd.melt(
         products,
         id_vars=['product_id'],
@@ -22,4 +25,3 @@ def rearrange_products_table(products: pd.DataFrame) -> pd.DataFrame:
     )
     result = result.dropna(subset=['price'])
     return result
-    
