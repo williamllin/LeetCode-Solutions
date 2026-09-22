@@ -1,5 +1,5 @@
 class Solution:
-    def compress(self, chars: List[str]) -> int:
+    def compress(self, chars: list[str]) -> int:
         #write紀錄寫到哪 anchor紀錄當前字元的起點
         write = 0
         anchor = 0
@@ -9,7 +9,6 @@ class Solution:
             #condition1:已經走到陣列最後一個字了
             #condition2:下一個字跟現在這個字長得不一樣
             if read == len(chars) - 1 or chars[read] != chars[read + 1]:
-                
                 #動作一：先把這個字元寫進 write 的位置
                 chars[write] = chars[anchor]
                 write += 1
