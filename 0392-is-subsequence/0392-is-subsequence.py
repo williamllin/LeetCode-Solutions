@@ -10,12 +10,9 @@ class Solution:
         
         return i == len(s)
         '''
-
         i,j=0,0 #start from left
         while i<len(s) and j<len(t):
             if s[i] == t[j]: #if match
                 i+=1 #i move on
             j+=1 #j has to move always
-
         return i==len(s) #if i finished, True
-
