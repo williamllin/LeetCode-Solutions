@@ -6,7 +6,8 @@ def replace_employee_id(employees: pd.DataFrame, employee_uni: pd.DataFrame) -> 
     result = df[['unique_id','name']]
     return result
     '''
+
     #left join
-    df = employees.merge(employee_uni, left_on = 'id', right_on = 'id', how = 'left')
+    df = employees.merge(employee_uni, left_on='id', right_on='id', how='left')
     result = df[['unique_id','name']]
-    return result
+    return  result
