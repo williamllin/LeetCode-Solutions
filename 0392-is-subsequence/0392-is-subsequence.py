@@ -10,6 +10,8 @@ class Solution:
         
         return i == len(s)
         '''
+
+        
         i,j=0,0 #start from left
         while i<len(s) and j<len(t):
             if s[i] == t[j]: #if match
