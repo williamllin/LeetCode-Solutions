@@ -1,6 +1,6 @@
 class Solution:
     def maxOperations(self, nums: List[int], k: int) -> int:
-        '''
+        
         nums.sort() #sort the list first
         operation = 0
         left = 0
@@ -16,11 +16,10 @@ class Solution:
                 left+=1
             else:
                 right-=1 #if bigger, decrease the sum
-                
         return operation
-'''
+        '''
         nums.sort()
-        operation = 0
+        operations = 0
         left = 0
         right = len(nums)-1
 
@@ -29,9 +28,10 @@ class Solution:
             if current_sum == k:
                 left+=1
                 right-=1
-                operation+=1
-            elif current_sum < k:
+                operations+=1
+            elif current_sum < k: #too small then add
                 left+=1
             else:
-                right-=1
-        return operation 
+                right+=1 #too large then reduce
+        return operations
+        '''
