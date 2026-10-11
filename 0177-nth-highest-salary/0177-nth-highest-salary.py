@@ -19,9 +19,9 @@ def nth_highest_salary(employee: pd.DataFrame, N: int) -> pd.DataFrame:
 
     if N<=0:
         return pd.DataFrame({f'getNthHighestSalary({N})':[None]})
+
     unique_salary = employee['salary'].drop_duplicates()
     sorted_salary = unique_salary.sort_values(ascending=False)
-
     if N>len(sorted_salary):
         ans = None
     else:
