@@ -1,5 +1,5 @@
 class Solution:
-    def longestOnes(self, nums: List[int], k: int) -> int:
+    def longestOnes(self, nums: list[int], k: int) -> int:
         left = 0
         zero_count = 0
         max_len = 0
