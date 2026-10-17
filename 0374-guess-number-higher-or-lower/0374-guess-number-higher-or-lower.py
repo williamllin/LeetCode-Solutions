@@ -22,4 +22,3 @@ class Solution:
                 left = mid+1
 
         return -1 #make sure if number is not within 1 and n, still gets an int as ans
-        
