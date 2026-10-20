@@ -1,6 +1,5 @@
 class Solution:
-    def minEatingSpeed(self, piles: List[int], h: int) -> int:
-
+    def minEatingSpeed(self, piles: list[int], h: int) -> int:
         #minimum speed 'k' to finish all bananas in 'h' hours
         #range of k: (1,max(piles))
         left, right = 1, max(piles)
@@ -13,6 +12,8 @@ class Solution:
             else: 
                 right = mid
         return left
+
+        
 '''      
 piles = [30,11,23,4,20], h = 5
 
