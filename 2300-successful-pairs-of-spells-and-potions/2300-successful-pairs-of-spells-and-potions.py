@@ -1,5 +1,6 @@
 class Solution:
-    def successfulPairs(self, spells: List[int], potions: List[int], success: int) -> List[int]:
+    def successfulPairs(self, spells: list[int], potions: list[int], success: int) -> list[int]:
+        '''
         potions.sort()
         m = len(potions)
         ans = []
@@ -11,7 +12,6 @@ class Solution:
             #Binary search for the first potion >= min_potion
             left, right = 0, m - 1
             idx = m #Default to m if no potion satisfies the condition
-            
             while left <= right:
                 mid = (left + right) // 2
                 if potions[mid] >= min_potion_required:
@@ -24,3 +24,23 @@ class Solution:
             ans.append(m - idx)
             
         return ans
+        '''
+        potions.sort()
+        m = len(potions)
+        ans = []
+
+        for spell in spells:
+            min_potion = (success + spell -1)//spell
+            left, right = 0, m-1
+            idx = m
+            while left <= right:
+                mid = (left+right) //2
+                if potions[mid] >= min_potion:
+                    idx = mid
+                    right = mid-1
+                else:
+                    left = mid+1
+            ans.append(m-idx)
+
+        return ans
+        
