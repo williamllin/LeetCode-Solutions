@@ -10,7 +10,6 @@ select max(salary) as SecondHighestSalary
 from rankedsalary
 where salary_ranked = 2
 */
-
 with ranked_salary as(
     select id, salary
         , dense_rank()over(order by salary desc) as salary_rank
@@ -19,11 +18,3 @@ with ranked_salary as(
 select max(salary) as SecondHighestSalary
 from ranked_salary
 where salary_rank = 2
-
-
-
-
-
-
-
-
