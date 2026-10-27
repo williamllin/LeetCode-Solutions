@@ -42,6 +42,7 @@ SELECT product_id, 'store3' AS store, store3 AS price
 FROM products
 WHERE store3 IS NOT NULL;
 */
+
 select product_id, 'store1' as store, store1 as price
 from products
 where store1 is not null
