@@ -1,15 +1,4 @@
 /*
-with preparedtable as (
-    select num,
-        lead(num, 1)over(order by id) as nextnum, #lead()over... will move down the column to scan
-        lead(num, 2)over(order by id) as nextnextnum
-    from logs
-)
-
-select distinct num as ConsecutiveNums
-from preparedtable
-where num = nextnum and num = nextnextnum
-*/
 with preparedtable as(
     select num,
         lead(num,1)over(order by id) as nextnum,
@@ -19,5 +8,16 @@ with preparedtable as(
 select distinct num as ConsecutiveNums
 from preparedtable
 where num = nextnum and num = nextnextnum
+*/
 #can't write num=nextnum=nextnextnum, since it would then be (True/False) = nextnextnum
 #~ (1 or 0)=nextnextnum
+
+with preparedtable as (
+    select num,
+        lead(num,1)over(order by id) as nextnum,
+        lead(num,2)over(order by id) as nextnextnum
+    from logs
+)
+select distinct num as ConsecutiveNums
+from preparedtable
+where num = nextnum and num = nextnextnum
