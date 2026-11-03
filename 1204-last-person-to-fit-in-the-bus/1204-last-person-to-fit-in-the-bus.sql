@@ -10,9 +10,11 @@ where total_weight <=1000
 order by turn desc
 limit 1
 */
+
+
 with cumulativetable as (
     select person_name, turn
-        , sum(weight)over(order by turn asc) as total_weight
+        ,sum(weight)over(order by turn asc) as total_weight
     from queue
 )
 select person_name
