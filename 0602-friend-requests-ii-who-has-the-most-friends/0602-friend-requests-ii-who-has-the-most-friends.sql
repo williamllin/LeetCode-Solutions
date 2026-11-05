@@ -14,15 +14,14 @@ order by num desc
 limit 1
 */
 
-
-
-with friends as (
+with allfriend as (
     select requester_id as id from requestaccepted
     union all
     select accepter_id as id from requestaccepted
 )
+
 select id, count(*) as num
-from friends
+from allfriend
 group by id
 order by num desc
 limit 1
