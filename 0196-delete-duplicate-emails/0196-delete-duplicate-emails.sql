@@ -12,13 +12,13 @@ where id not in(
 
 #Cannot select table while delete/update from table, so create table t
 #group by email, and not in 'smallest id'
-delete
-from person
+
+delete from person
 where id not in (
     select t.min_id
     from (
         select min(id) as min_id
         from person
         group by email
-    )t
+    ) t
 )
